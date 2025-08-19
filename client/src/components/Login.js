@@ -14,7 +14,7 @@ const Login = () => {
   function  loginHandler(e) {
     e.preventDefault();
 
-    fetch("http://localhost:5000/auth/login", {
+    fetch("https://securepay-04-api.onrender.com/auth/login", {
       method: "POST",
       body: JSON.stringify({ email, password }),
       headers: {

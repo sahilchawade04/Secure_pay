@@ -36,7 +36,7 @@ const Users = ({ senderAmount, isAuthenticated, userEmail }) => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/admin/availableUsers",
+          "https://securepay-04-api.onrender.com/admin/availableUsers",
           {
             method: "GET",
             headers: {

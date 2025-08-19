@@ -24,7 +24,7 @@ router.post('/', async (req, res) => {
       await validUser.save();
 
       // send mail with reset password token
-      const resetUrl = `http://localhost:3000/forgotPassword/reset?token=${resetToken}`;
+      const resetUrl = `https://secure-pay-zeta.vercel.app/forgotPassword/reset?token=${resetToken}`;
 
       // creating a transporter for sending mail
       const transporter = nodemailer.createTransport({

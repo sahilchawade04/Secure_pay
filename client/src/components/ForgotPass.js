@@ -15,7 +15,7 @@ const ForgotPassword = () => {
     setResponse("");
     setLoading(true);
 
-    fetch(`http://localhost:5000/forgotPassword/`, {
+    fetch(`https://securepay-04-api.onrender.com/forgotPassword/`, {
       method: "POST",
       body: JSON.stringify({email: email}),
       headers: {

@@ -26,7 +26,7 @@ const PassBook = ({ userEmail, isAuthenticated }) => {
   };
 
   useEffect(() => {
-    fetch("http://localhost:5000/admin/ledger", {
+    fetch("https://securepay-04-api.onrender.com/admin/ledger", {
       method: "GET",
       headers: {
         email: userEmail,
