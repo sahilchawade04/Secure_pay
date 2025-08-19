@@ -20,7 +20,7 @@ const Signup = () => {
   function registerHandler(e) {
     e.preventDefault();
 
-    fetch("http://localhost:5000/auth/signup", {
+    fetch("https://securepay-04-api.onrender.com/auth/signup", {
       method: "POST",
       body: JSON.stringify({ firstName, lastName, email, password }),
       headers: {

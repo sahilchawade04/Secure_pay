@@ -29,7 +29,7 @@ export default function TransactionModal({
     setAmount("");
     setPin("");
     toast.promise(
-      fetch("http://localhost:5000/admin/transaction", {
+      fetch("https://securepay-04-api.onrender.com/admin/transaction", {
         method: "POST",
         body: JSON.stringify({ sender, receiver, amount, pin }),
         headers: {

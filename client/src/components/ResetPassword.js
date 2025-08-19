@@ -27,7 +27,7 @@ const ResetPassword = () => {
     else{
       try{
         const token = searchParams.get("token");
-        fetch("http://localhost:5000/forgotPassword/reset", {
+        fetch("https://securepay-04-api.onrender.com/forgotPassword/reset", {
           method: "POST",
           body: JSON.stringify({password, token}),
           headers: {
